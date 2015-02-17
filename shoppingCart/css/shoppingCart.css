@@ -1,19 +1,39 @@
-﻿body
-{
+﻿body {
+  height: 100%; 
 }
 
 header {
   position: fixed;
+  width: 100%;
+  background-color: gray;
+  opacity: 0.5;
+}
+
+hgroup {
+  text-align: center;
 }
 
 footer {
   position: fixed;
+  width: 100%;
 }
 
 #storeItems {
   float: left;
+  width: 64%;
+  height: 100%;
+  background-color: blue;
+  border: 2px solid yellow;
 }
 
 #cartItems {
   float: right;
+  height: 100%;
+  width: 32%;
+  background-color: yellow;
+  border: 2px solid blue;
+}
+
+[draggable=true] {
+	cursor: move;
 }
