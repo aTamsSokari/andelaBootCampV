@@ -9,3 +9,11 @@ header {
 footer {
   position: fixed;
 }
+
+#storeItems {
+  float: left;
+}
+
+#cartItems {
+  float: right;
+}
