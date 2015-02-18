@@ -1,30 +1,28 @@
 ﻿/*tag properties*/
 body {
   height: 100%; 
-  width: 100%;
+  width: 80%;
+  margin: auto;
   background-image: url(../images/bg.jpg);
-}
-
-header {
-  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100px;
-  text-align: center;
-  background-image: url(../images/bg-header.jpg) ;
-  z-index: 10;
-  color: beige;
+  font: 13px/1.5 helvetica, arial, san-serif;
 }
 
 h1, h2 {
   text-align: center;
   color: sandybrown;
-  background-color: gray;
 }
 
-section {
+h2 {
+  position: absolute;
+	bottom: 20px;
+	display: none;
+}
+
+article {
   margin: auto;
+  height: 100%;
 }
 
 ul li {
@@ -43,12 +41,6 @@ footer {
 }
 
 /*id properties*/
-#content {
-  position: relative;
-  top: 105px;
-  height: 100%;
-}
-
 #storeItems {
   float: left;
   width: 65%;
@@ -60,7 +52,6 @@ footer {
 
 #cartItems {
   float: right;
-  min-height: 500px;
   height: 100%;
   width: 33%;
   padding: 0;
@@ -69,12 +60,6 @@ footer {
 }
 
 /*class properties*/
-
-.page {
-  width: 80%;
-  margin: auto;
-}
-
 .item {
   display:block;
 	float:left;
@@ -88,6 +73,21 @@ footer {
 	overflow:hidden;
 }
 
+.item img {
+	border:0;
+	margin:auto;
+}
+
+.item div {
+	background:rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.7);
+	position:relative;
+  height: 100px;
+	bottom:115px;
+	color: white;
+	padding: 3px 0;
+	display:none;
+}
 
 /*attribute properties*/
 [draggable] {

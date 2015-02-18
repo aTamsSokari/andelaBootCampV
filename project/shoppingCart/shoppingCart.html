@@ -4,89 +4,99 @@
 <head>
   <meta charset="utf-8" />
   <link href="css/shoppingCart.css" rel="stylesheet" type="text/css">
-  <script src="js/shoppingCart.js" type="text/javascript"></script>
   <title>Tams' Shopping Cart</title>
 </head>
 <body>
-  <header>
-    <hgroup class="page">
-      <h2>Andela BootCampV</h2>
-      <h3>Project by <span id="myName">SOKARI, Tams (II)</span></h3>
-    </hgroup>
-  </header>
-  <article id="content" class="page">
-    <section id="storeItems">
-      <h1>Store Items</h1>
-      <section>
-        <ul>
-          <li class="item" id="" draggable="true" >
-            <img src="images\eloquent-javascript-marijn-haverbeke.jpg" />
-            <div>
-              <p class="itemName"><strong>Eloquent JavaScript</strong></p>
-            </div>
-          </li>
-          <li class="item" id="" draggable="true" >
-            <img src="images\fundamentals-oop-java-permanand-mohan.jpg" />
-            <div>
-              <p class="itemName"><strong>Fundamentals of Object-Oriented-Programming with Java</strong></p>
-            </div>
-          </li>
-          <li class="item" id="" draggable="true">
-            <img src="images\programming-html5-javascript-css3-rick-delorme.jpg" />
-            <div>
-              <p class="itemName"><strong>Programming in HTML5 with Javascript and CSS3</strong></p>
-            </div>
-          </li>
-          <li class="item" id="" draggable="true">
-            <img src="images\if-hemingway-wrote-javascript-angus-croll.jpg" />
-            <div>
-              <p class="itemName"><strong>If Hemingway Wrote JavaScript</strong></p>
-            </div>
-          </li>
-          <li class="item" id="" draggable="true">
-            <img src="images\javascript-jquery-jon-duckett.jpg" />
-            <div>
-              <p class="itemName"><strong>JavaScript &amp; jQuery</strong></p>
-            </div>
-          </li>
-          <li class="item" id="" draggable="true">
-            <img src="images\oop-php5-hasin-hayder.jpg" />
-            <div>
-              <p class="itemName"><strong>Object-Oriented-Programming with PHP5</strong></p>
-            </div>
-          </li>
-          <li class="item" id="" draggable="true">
-            <img src="images\python3-oop-dusty-phillips.jpg" />
-            <div>
-              <p class="itemName"><strong>Python3 Object-Oriented-Programming</strong></p>
-            </div>
-          </li>
-          <li class="item" id="" draggable="true">
-            <img src="images\pro-git-scott-chacon.jpg" />
-            <div>
-              <p class="itemName"><strong>Pro Git</strong></p>
-            </div>
-          </li>
-          <li class="item" id="" draggable="true">
-            <img src="images\html-css-jon-duckett.jpg" />
-            <div>
-              <p class="itemName"><strong>HTML &amp; CSS</strong></p>
-            </div>
-          </li>
-        </ul>
-      </section>
+   <ul id="storeItems">
+      <li>
+        <a class="item" id="elqjs" draggable="true" href="#">
+          <img src="images\eloquent-javascript-marijn-haverbeke.jpg" />
+          <div>
+            <p class="itemName"><strong>Eloquent JavaScript</strong></p>
+            <p><strong>Quantity</strong>: <span>10</span></p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="item" id="oopjava" draggable="true" href="#">
+          <img src="images\fundamentals-oop-java-permanand-mohan.jpg" />
+          <div>
+            <p class="itemName"><strong>Fundamentals of Object-Oriented-Programming with Java</strong></p>
+            <p><strong>Quantity</strong>: <span>10</span></p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="item" id="htmljscss" draggable="true" href="#">
+          <img src="images\programming-html5-javascript-css3-rick-delorme.jpg" />
+          <div>
+            <p class="itemName"><strong>Programming in HTML5 with Javascript and CSS3</strong></p>
+            <p><strong>Quantity</strong>: <span>10</span></p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="item" id="ifhemwjs" draggable="true" href="#">
+          <img src="images\if-hemingway-wrote-javascript-angus-croll.jpg" />
+          <div>
+            <p class="itemName"><strong>If Hemingway Wrote JavaScript</strong></p>
+            <p><strong>Quantity</strong>: <span>10</span></p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="item" id="jsjquery" draggable="true" href="#">
+          <img src="images\javascript-jquery-jon-duckett.jpg" />
+          <div>
+            <p class="itemName"><strong>JavaScript &amp; jQuery</strong></p>
+            <p><strong>Quantity</strong>: <span>10</span></p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="item" id="oopphp" draggable="true" href="#">
+          <img src="images\oop-php5-hasin-hayder.jpg" />
+          <div>
+            <p class="itemName"><strong>Object-Oriented-Programming with PHP5</strong></p>
+            <p><strong>Quantity</strong>: <span>10</span></p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="item" id="py3oop" draggable="true" href="#">
+          <img src="images\python3-oop-dusty-phillips.jpg" />
+          <div>
+            <p class="itemName"><strong>Python3 Object-Oriented-Programming</strong></p>
+            <p><strong>Quantity</strong>: <span>10</span></p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="item" id="progit" draggable="true" href="#">
+          <img src="images\pro-git-scott-chacon.jpg" />
+          <div>
+            <p class="itemName"><strong>Pro Git</strong></p>
+            <p><strong>Quantity</strong>: <span>10</span></p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="item" id="hmtlcss" draggable="true" href="#">
+          <img src="images\html-css-jon-duckett.jpg" />
+          <div>
+            <p class="itemName"><strong>HTML &amp; CSS</strong></p>
+            <p><strong>Quantity</strong>: <span>10</span></p>
+          </div>
+        </a>
+      </li>
+    </ul>
+   <section id="cartItems">
+     <h1>Your Cart</h1>
+     <ul></ul>
+     <p id="total"><strong>Total items:</strong> <span></span></p>
+     <h2>Add item to cart here </h2>
     </section>
-    <section id="cartItems">
-      <h1>Your Cart</h1>
-      <ul>
-        
-      </ul>
-      <h2>Drop items here</h2>
-    </section>
-  </article>
-
-  <footer>
-
-  </footer>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script src="js/shoppingCart.js" type="text/javascript"></script>
 </body>
 </html>
