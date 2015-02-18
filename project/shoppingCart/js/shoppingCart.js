@@ -4,8 +4,9 @@ $('.item')
     $('h2').fadeIn('fast');
   })
   .hover(function () { $('div', this).fadeIn(); },
-  function () { $('div', this).fadeOut(); }
-);
+  function () {
+    $('div', this).fadeOut();
+  });
 
 $('#cartItems')
 	.bind('dragover', function (evt) {
