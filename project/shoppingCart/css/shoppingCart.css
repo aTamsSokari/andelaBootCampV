@@ -3,7 +3,6 @@ body {
   height: 100%; 
   width: 80%;
   margin: auto;
-  background-image: url(../images/bg.jpg);
   top: 0;
   left: 0;
   font: 13px/1.5 helvetica, arial, san-serif;
@@ -40,23 +39,23 @@ footer {
   width: 100%;
 }
 
+button {
+  display: inline-block;
+}
 /*id properties*/
 #storeItems {
   float: left;
-  width: 65%;
+  width: 64%;
   height: 100%;
   padding: 0;
-  margin: auto;
-  background-image: url(../images/bg.jpg) ;
 }
 
 #cartItems {
   float: right;
   height: 100%;
-  width: 33%;
-  padding: 0;
-  margin: auto;
-  background-image: url(../images/bg-header.jpg) ;
+  width: 26%;
+  padding: 0px 5%;
+  background-color: #343C45;
 }
 
 /*class properties*/
