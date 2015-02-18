@@ -22,16 +22,34 @@ footer {
   float: left;
   width: 64%;
   height: 100%;
-  background-color: blue;
-  border: 2px solid yellow;
+  padding: 0;
 }
 
+#storeItems ul li {
+  display: inline; 
+}
+
+.item {
+  display:block;
+	float:left;
+	width:180px;
+	height:180px;
+	margin:10px;
+	border:1px dotted #4f4d4d;
+	text-align:center;
+	text-decoration:none;
+	color: #000;
+	overflow:hidden;
+}
 #cartItems {
   float: right;
   height: 100%;
   width: 32%;
-  background-color: yellow;
-  border: 2px solid blue;
+  padding: 0;
+}
+
+#cartItems ul li {
+  display: inline;
 }
 
 [draggable=true] {
