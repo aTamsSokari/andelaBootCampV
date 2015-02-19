@@ -56,6 +56,15 @@ button {
   width: 26%;
   padding: 0px 5%;
   background-color: #343C45;
+  bottom: 0;
+}
+
+#cartItems .item {
+  color: beige;
+}
+
+#total {
+  bottom: -350px;
 }
 
 /*class properties*/
@@ -85,7 +94,7 @@ button {
 	bottom:110px;
 	color: white;
 	padding: 3px 0;
-	display:none;
+  display: none;
 }
 
 /*attribute properties*/
@@ -97,5 +106,5 @@ button {
   /* Required to make elements draggable in old WebKit */
   -khtml-user-drag: element;
   -webkit-user-drag: element;
-  cursor: move;
+  cursor: copy;
 }
