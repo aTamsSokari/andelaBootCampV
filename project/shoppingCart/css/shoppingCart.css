@@ -43,7 +43,6 @@ p {
   width: 26%;
   padding: 0px 5%;
   background-color: #343C45;
-  bottom: 0;
 }
 
 #cartItems ul {
@@ -53,8 +52,11 @@ p {
 	list-style:none;
 	border-bottom:1px solid #494949;
 	padding:5px;
+  display: inline-block;
+  float: left;
+  color: white;
 }
-#cart .quantity {
+#cartItems .quantity {
 	font-weight:bold;
 	padding-right:10px;
 	margin-right:10px;

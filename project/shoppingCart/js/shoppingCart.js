@@ -1,7 +1,7 @@
 $('.item')
   .bind('dragstart', function (e) {
     this.style.opacity = '0.6';  // this / e.target is the source node.
-    e.dataTransfer.setData('text', this.innerHTML);
+    e.dataTransfer.setData('text', this.id);
     $('h2').fadeIn('fast');
   })
   .hover(
