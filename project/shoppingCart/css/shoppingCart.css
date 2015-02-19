@@ -1,10 +1,12 @@
 ﻿/*tag properties*/
+html {
+  height: 100%;
+}
 body {
   height: 100%; 
   width: 80%;
-  margin: auto;
-  top: 0;
-  left: 0;
+  margin: 0 auto;
+  padding: 0;
   font: 13px/1.5 helvetica, arial, san-serif;
 }
 
@@ -19,35 +21,20 @@ h2 {
 	display: none;
 }
 
-article {
-  margin: auto;
-  height: 100%;
+p {
+  margin: 0;
 }
 
-ul li {
-  display: inline;
-  margin: auto; 
-  list-style: none;
-}
-
-ul li p {
-  text-align: center;
-}
-
-footer {
-  position: fixed;
-  width: 100%;
-}
-
-button {
-  display: inline-block;
-}
 /*id properties*/
 #storeItems {
   float: left;
   width: 64%;
-  height: 100%;
   padding: 0;
+  list-style: none;
+}
+
+#storeItems li {
+  display: inline;
 }
 
 #cartItems {
@@ -59,12 +46,27 @@ button {
   bottom: 0;
 }
 
-#cartItems .item {
-  color: beige;
+#cartItems ul {
+	padding:0;
+}
+#cartItems li {
+	list-style:none;
+	border-bottom:1px solid #494949;
+	padding:5px;
+}
+#cart .quantity {
+	font-weight:bold;
+	padding-right:10px;
+	margin-right:10px;
+	border-right:1px solid #494949;
+	display:inline-block;
+	width:15px;
+	text-align:right;
 }
 
 #total {
-  bottom: -350px;
+  float: left;
+  color: rgba(155, 141, 141, 0.8);
 }
 
 /*class properties*/
@@ -90,21 +92,8 @@ button {
 	background:rgb(0, 0, 0);
 	background: rgba(0, 0, 0, 0.7);
 	position:relative;
-  height: 100px;
-	bottom:110px;
+	bottom:90px;
 	color: white;
 	padding: 3px 0;
   display: none;
-}
-
-/*attribute properties*/
-[draggable] {
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  /* Required to make elements draggable in old WebKit */
-  -khtml-user-drag: element;
-  -webkit-user-drag: element;
-  cursor: copy;
 }
